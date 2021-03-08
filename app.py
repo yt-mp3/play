@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 
-url = st.text_input("youtube url", value="https://www.youtube.com/watch?v=IwOfCgkyEj0")
+url = st.text_input("youtube url", value="https://www.youtube.com/watch?v=IwOfCgkyEj0").split("&")[0]
 file_name = url.split("=")[-1]+".mp3"
 command = "youtube-dl --extract-audio --audio-format mp3 " + url + " -o " + file_name 
 

@@ -1,2 +1,2 @@
 # play
-Play YouTube video in mp3 format.
+Play YouTube videos in MP3 format.
